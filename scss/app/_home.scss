@@ -1,0 +1,89 @@
+.count-badge {
+  background: none repeat scroll 0 0 #FF4444;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 11px;
+  padding: 3px 1px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: -2px;
+  width: 17px;
+  z-index: 1;
+}
+.slide {
+  color: #fff;
+  height: 22px;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0;
+  z-index: -1;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+}
+.status-success-visible {
+  background-color: $balanced;
+  top: 64px;
+}
+.status-error-visible {
+  background-color: $energized;
+  top: 64px;
+}
+.center-child {
+  .scroll {
+    .speedometer-container {
+      margin-bottom: 24px;
+      margin-top: 12px;
+      position: relative;
+      text-align:center;
+      .instrument {
+        border: solid 2px $balanced;
+        display: inline-block;
+        min-width: 90px;
+        padding: 3px 6px;
+        .instrument-figure {
+          font-size: 24px;
+          &.no-units {
+            height: 25px;
+          }
+          small {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .play-button {
+      position: relative;
+      top: 70px;
+    }
+    width: 100%;
+    .button {
+      &.start-stop {
+        border-radius: 50px;
+        height: 100px;
+        margin: 0 auto;
+        position: relative;
+        width: 100px;
+      }
+      &.icon {
+        &:before {
+          font-size: 48px;
+        }
+      }
+      &.ion-play {
+        &:before {
+          padding-left: 10px;
+        }
+      }
+      &.ion-pause {
+        &:before {
+          padding-left: 2px;
+        }
+      }
+    }
+  }
+}
